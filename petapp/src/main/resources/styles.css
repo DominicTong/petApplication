@@ -1,0 +1,340 @@
+/* ============================================================
+   Pet Garden App — Main Stylesheet
+   Warm, cosy aesthetic inspired by Finch / Neko Atsume
+   ============================================================ */
+
+/* ─── ROOT ─────────────────────────────────────────────────── */
+.root {
+    -fx-background-color: #faf7f2;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ─── TAB PANE ──────────────────────────────────────────────── */
+.tab-pane {
+    -fx-background-color: #faf7f2;
+    -fx-tab-min-height: 42px;
+}
+
+.tab-pane > .tab-header-area {
+    -fx-background-color: #f0e8dc;
+    -fx-padding: 10 16 0 16;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #f0e8dc;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: #e0cfc0;
+    -fx-background-radius: 10 10 0 0;
+    -fx-padding: 10 28 10 28;
+    -fx-cursor: hand;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: #b87748;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab .tab-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6b4c3b;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected .tab-label {
+    -fx-text-fill: #ffffff;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:hover:!selected {
+    -fx-background-color: #d4bfac;
+}
+
+/* ─── SHARED CONTENT ────────────────────────────────────────── */
+.tab-content {
+    -fx-background-color: #faf7f2;
+}
+
+/* ─── TYPOGRAPHY ────────────────────────────────────────────── */
+.page-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3d2b1a;
+}
+
+.subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #8b7355;
+}
+
+/* ─── COIN BADGE ────────────────────────────────────────────── */
+.coin-badge {
+    -fx-background-color: #fff8dc;
+    -fx-border-color: #e8c840;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5 14;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7a5a00;
+}
+
+/* ─── TASKS TAB ─────────────────────────────────────────────── */
+.task-input {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4b896;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 9;
+    -fx-background-radius: 9;
+    -fx-padding: 10 14;
+    -fx-font-size: 14px;
+    -fx-text-fill: #3a2a1a;
+}
+
+.task-input:focused {
+    -fx-border-color: #b87748;
+}
+
+.task-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+
+.task-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.task-list {
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+.task-row {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-border-color: #ecdece;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 5, 0, 0, 2);
+}
+
+.task-row-completed {
+    -fx-background-color: #f4f2ee;
+    -fx-background-radius: 12;
+    -fx-border-color: #ddd8d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+
+.task-title {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2e1e0e;
+}
+
+.task-title-done {
+    -fx-font-size: 14px;
+    -fx-text-fill: #aaa;
+    -fx-strikethrough: true;
+}
+
+.done-badge {
+    -fx-background-color: #d4edda;
+    -fx-border-color: #a8d8b4;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 3 10;
+    -fx-font-size: 11px;
+    -fx-text-fill: #2a6040;
+    -fx-font-weight: bold;
+}
+
+/* ─── BUTTONS ───────────────────────────────────────────────── */
+.btn-primary {
+    -fx-background-color: #b87748;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 9;
+    -fx-cursor: hand;
+    -fx-border-radius: 9;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #9c6238;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #884e24;
+}
+
+.btn-delete {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cc4444;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-padding: 4 8;
+    -fx-background-radius: 6;
+}
+
+.btn-delete:hover {
+    -fx-background-color: #fde8e8;
+    -fx-background-radius: 6;
+}
+
+/* ─── SHOP TAB ──────────────────────────────────────────────── */
+.pack-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 18;
+    -fx-border-color: #e8d5c0;
+    -fx-border-radius: 18;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 16, 0, 0, 5);
+}
+
+.pack-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3d2b1a;
+}
+
+.pack-description {
+    -fx-font-size: 13px;
+    -fx-text-fill: #7a6050;
+    -fx-text-alignment: center;
+}
+
+.pack-cost {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7a5a00;
+}
+
+.rarity-hint {
+    -fx-font-size: 11px;
+    -fx-text-fill: #9a8a7a;
+}
+
+.btn-buy {
+    -fx-background-color: #b87748;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 13 28;
+    -fx-background-radius: 28;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(184,119,72,0.4), 8, 0, 0, 3);
+}
+
+.btn-buy:hover {
+    -fx-background-color: #9c6238;
+}
+
+.btn-buy:pressed {
+    -fx-background-color: #884e24;
+}
+
+.btn-buy:disabled {
+    -fx-background-color: #ccbba8;
+    -fx-effect: none;
+    -fx-text-fill: #999;
+}
+
+/* ─── GARDEN TAB ────────────────────────────────────────────── */
+.garden-scroll {
+    -fx-background-color: transparent;
+    -fx-background: #edf7ea;
+    -fx-border-color: transparent;
+}
+
+.garden-scroll > .viewport {
+    -fx-background-color: #edf7ea;
+}
+
+.garden-area {
+    -fx-background-color: #edf7ea;
+    -fx-padding: 16;
+}
+
+/* ─── ANIMAL CARDS ──────────────────────────────────────────── */
+.animal-card {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-width: 2;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 7, 0, 0, 3);
+}
+
+.animal-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 12, 0, 0, 5);
+    -fx-translate-y: -2;
+}
+
+/* Rarity: background + border colour */
+.rarity-common {
+    -fx-background-color: #f5f4f0;
+    -fx-border-color: #c0b8a8;
+}
+
+.rarity-uncommon {
+    -fx-background-color: #eef8e4;
+    -fx-border-color: #6ab84c;
+}
+
+.rarity-rare {
+    -fx-background-color: #e4eeff;
+    -fx-border-color: #5588d8;
+}
+
+.rarity-legendary {
+    -fx-background-color: #fffbe0;
+    -fx-border-color: #e0a020;
+    -fx-effect: dropshadow(gaussian, rgba(224,160,32,0.30), 10, 0, 0, 4);
+}
+
+.animal-name {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2e1e0e;
+}
+
+.animal-count {
+    -fx-font-size: 12px;
+    -fx-text-fill: #888;
+}
+
+.rarity-badge {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 2 8;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.rarity-text-common    { -fx-text-fill: #666; }
+.rarity-text-uncommon  { -fx-text-fill: #3a8a20; }
+.rarity-text-rare      { -fx-text-fill: #2050a0; }
+.rarity-text-legendary { -fx-text-fill: #a06010; }
+
+/* ─── EMPTY STATES ──────────────────────────────────────────── */
+.empty-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #9a8a7a;
+    -fx-padding: 40;
+    -fx-text-alignment: center;
+}
+
+.empty-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6a7a60;
+}
+
+.empty-hint {
+    -fx-font-size: 13px;
+    -fx-text-fill: #8a9a80;
+    -fx-text-alignment: center;
+}

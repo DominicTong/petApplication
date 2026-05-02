@@ -107,11 +107,3 @@ user_collection  — id, animal_id, obtained_at
 
 ---
 
-## Extending the Project (Dissertation Ideas)
-
-- **User accounts** — add a `users` table and login screen
-- **Multiple pack types** — e.g. "Rare Pack" (guaranteed ≥ Uncommon) for 150 coins
-- **Animal interactions** — track favourite spots, visit counts (full Neko Atsume)
-- **Streak system** — bonus coins for completing tasks N days in a row
-- **Statistics screen** — chart coins earned over time using JavaFX Charts
-- **Sound effects** — use JavaFX `MediaPlayer` for pack-open sounds
